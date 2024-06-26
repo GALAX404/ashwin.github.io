@@ -1,0 +1,482 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://th.bing.com/th/id/R.735036c6970a14b303d3a6a6e778327b?rik=rfBhZRtQLnxBNw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fLight-Blue-Backgrounds.jpg&ehk=DNlvs2SCfIeqrQE9HrkS%2bYyF36gIelDkdRKgOZsLlnY%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Ensures navbar is on top of other content */
+    background-color: rgb(98, 184, 223); /*transparent background */
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+    transition: transform 0.2s;
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Ensure the text color matches the rest of the navbar */
+    background: none; /* Remove default button styling */
+    border: none; /* Remove default button border */
+}
+
+.home-button svg {
+    width: 40px;
+    height: 40px;
+    color: #2f016e;
+}
+
+.home-button span {
+    font-size: 20px;
+    color: #2f016e;
+    font-weight: 700;
+}
+
+.home-button:hover {
+    transform: scale(1.02);
+}
+
+.navbar-center {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-center a {
+    text-decoration: none;
+    color: #2f016e;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.navbar-center a:hover {
+    transform: scale(1.02);
+}
+
+.navbar-right button {
+    height: 40px;
+    width: 160px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: #2f016e;
+    font-weight: 700;
+    border: 2px solid #2f016e;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 20px;
+}
+
+.navbar-right button:hover {
+    transform: scale(1.02);
+}
+
+.container {
+    margin-top: 0px; /* Ensures content starts below the fixed navbar */
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-div {
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+}
+
+.text-div p {
+    font-size: 65px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 106);
+}
+
+.typing-animation {
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 600;
+}
+
+.image-div {
+    margin: 10px;
+    flex: 1;
+    text-align: center; /* Center the image for small devices */
+}
+
+.image-div img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container1{
+    margin-top: 20px; /* Ensures content starts below the fixed navbar */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.additional-text {
+    width:50%;
+    font-size: 25px;
+    margin: 40px;
+    text-align: center;
+    color: #021854;
+}
+
+.additional-button {
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 70px;
+    margin-right: 15vw;
+    font-size: 25px;
+    color: #012c6e;
+    font-weight: 700;
+    border: 2px solid #000000;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 15px;
+    height: 80px;
+    width: 270px;
+    padding: 10px;
+}
+
+.additional-button:hover {
+    transform: scale(1.02);
+}
+
+.skills-section {
+    border: 20px #651d1d;
+    padding: 70px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    margin: 0px auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    margin-top: 10px;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.skills-section p{
+    font-size: 25px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.skill-box {
+    background-color: rgba(8, 112, 172, 0.4);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(25, 0, 255, 0.5);
+    font-size: 1.2em;
+    color: #000000;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.skill-box span {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.skill-box img {
+    width: 100px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 900px) {
+    .image-div img {
+        width: 330px;
+        height: 330px;
+    }
+
+    .typing-animation {
+        font-size: 30px;
+    }
+    .additional-button{
+        height: 50px;
+        width: 250px;
+        margin-bottom: 30px;
+        margin-right: 10vw;
+    }
+}
+
+@media (max-width: 750px) {
+    .image-div img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 702px) {
+    .navbar {
+        padding-left: 0;
+    }
+
+    .home-button svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .home-button span {
+        font-size: 15px;
+    }
+
+    .navbar-center a {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .navbar-right button {
+        height: 35px;
+        width: 140px;
+        font-size: 14px;
+        margin-right: 15px;
+    }
+
+    .navbar-center {
+        gap: 5px;
+    }
+
+    .text-div p {
+        font-size: 45px;
+    }
+
+    .image-div img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding-top: 70px; /* Stack elements vertically */
+    }
+
+    .container1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .additional-button{
+        height: 50px;
+        width: 170px;
+        margin: auto;
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    .additional-text{
+        width: 70vw;
+        margin-top:0px;
+        margin-bottom: 10px;
+    }
+
+    .skill-box img {
+        width: 70px; /* Adjust the size as needed */
+        height: 40px; /* Adjust the size as needed */
+    }
+}
+
+@media (max-width: 540px) {
+
+    .home-button svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .home-button span {
+        font-size: 16px;
+    }
+
+    .navbar-center a {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .navbar-right button {
+        height: 30px;
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .navbar-center {
+        gap: 10px;
+    }
+
+    .text-div p {
+        font-size: 38px;
+    }
+
+    .image-div img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container {
+        padding-top: 60px;
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .container1{
+        margin-top: 20px;
+        padding-top: 5px;
+        margin-bottom: 20px;
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .additional-button{
+        height: 50px;
+        width: 170px;
+        margin: auto;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .additional-text{
+        font-size: 12x;
+        width: 80vw;
+        margin-top:0px;
+        margin-bottom: 10px;
+    }
+    .skills-section {
+        padding-top: 40px;
+        margin-top: 0px;
+    }
+    .skills-grid{
+        gap: 16px;
+    }
+    .skill-box{
+        font-size: 1.05em;
+
+    }
+    .skill-box img {
+        width: 50px; /* Adjust the size as needed */
+        height: 30px; /* Adjust the size as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-button {
+        padding: 10px 7px;
+    }
+
+    .home-button svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .home-button span {
+        font-size: 14px;
+    }
+
+    .navbar-center a {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+
+    .navbar-right button {
+        height: 26px;
+        width: 90px;
+        font-size: 11px;
+        margin-right: 4px;
+    }
+
+    .navbar-center {
+        gap: 2px;
+    }
+
+    .text-div p {
+        font-size: 38px;
+    }
+
+    .image-div img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .typing-animation {
+        font-size: 25px;
+    }
+
+    .container {
+        padding-top: 50px;
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .container1{
+        margin-top: 20px;
+        padding-top: 5px;
+        margin-bottom: 20px;
+        flex-direction: column; /* Stack elements vertically */
+    }
+    .additional-button{
+        height: 50px;
+        width: 170px;
+        margin: auto;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .additional-text{
+        font-size: 17px;
+        width: 80vw;
+        margin-top:0px;
+        margin-bottom: 10px;
+    }
+    .skills-grid{
+        gap: 16px;
+    }
+    .skill-box{
+        font-size: 0.6em;
+
+    }
+    .skill-box img {
+        width: 40px; /* Adjust the size as needed */
+        height: 20px; /* Adjust the size as needed */
+    }
+}

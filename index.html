@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+<body>
+    <!-- Navbar container -->
+    <nav class="navbar">
+        <!-- Left section: Home button -->
+        <div class="navbar-left">
+            <button class="home-button" onclick="window.location.href='#home';">
+                <!-- SVG logo -->
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg"><path d="M13.632 5.289c-0.613 0.129-1.823 0.565-2.662 0.984-1.275 0.613-1.759 0.968-2.921 2.13s-1.517 1.646-2.13 2.921c-1.646 3.373-1.646 6.6 0 10.005 0.613 1.291 0.952 1.759 2.13 2.921 1.178 1.178 1.63 1.501 2.921 2.13 1.969 0.936 2.921 1.162 5.002 1.162s3.034-0.226 5.002-1.162c1.275-0.613 1.727-0.952 2.921-2.13 1.178-1.194 1.517-1.646 2.13-2.921 0.774-1.63 1-2.388 1.178-4.002l0.113-1h-3.195l-0.21 1.243c-1.017 6.471-8.907 9.069-13.587 4.47-3.792-3.712-2.969-10.005 1.678-12.732 0.871-0.516 2.63-1.049 3.437-1.049h0.532v-3.227l-0.597 0.016c-0.339 0-1.113 0.113-1.743 0.242zM14.213 9.645c-3.421 0.92-5.648 4.325-5.067 7.745 0.662 3.792 4.212 6.39 7.891 5.761 3.776-0.645 6.39-4.212 5.761-7.859-0.71-4.115-4.647-6.713-8.585-5.648z"></path></svg>
+                <!-- Name -->
+                <span>Portfolio</span>
+            </button>
+        </div>
+        <!-- Center section: Navigation links -->
+        <div class="navbar-center">
+            <a href="#home">About</a>
+            <a href="#skills" onclick='scrollToSection("#skills");'>Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+        </div>
+        <!-- Right section: Button -->
+        <div class="navbar-right">
+            <button onclick='window.location.href = "https://github.com/GALAX404/";'>Github Profile</button>
+        </div>
+    </nav>
+
+    <!-- Content area -->
+    <div id="home" class="container">
+        <div class="text-div">
+            <p>Hi, I'm Mohit Panse</p>
+            <div class="typing-animation" id="animatedText"></div>
+        </div>
+        <div class="image-div">
+            <img src="https://th.bing.com/th/id/OIP.lkVN1WDlcV2jQCq-9LT7-wHaIJ?rs=1&pid=ImgDetMain" alt="ProfilePhoto">
+        </div>
+    </div>
+    <div class ="container1">
+        <div class="additional-text">
+            I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning, I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
+        </div>
+        <button class="additional-button"> Check Resume</button>
+    </div>
+    <div class="skills-section" id="skills">
+        <h2>Skills</h2>
+        <p>Here are some of my skills on which I have been working on for the past 1 years.</p>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <img src="https://1000logos.net/wp-content/uploads/2021/10/Meta-Symbol-2048x1152.png" alt="Meta Advertisement">
+                <span> Meta Advertisement </span>
+            </div>
+            <div class="skill-box">
+                <img src="https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1627562009/hevo-learn/Google-AdWords-logo.png" alt="Google Ads, Trends and Analytics">
+                <span>Google Ads, Trends and Analytics</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://dazeinfo.com/wp-content/uploads/2021/07/flipkart-amazon-investigation.jpeg" alt="Product Ads & Listing on Amazon & Flipkart">
+                <span>Product Ads & Listing on Amazon & Flipkart</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://logo-marque.com/wp-content/uploads/2020/11/Shopify-Logo.png" alt="Search Engine Optimization and Shopify">
+                <span>Search Engine Optimization and Shopify</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://avantustraining.com/wp-content/uploads/2022/10/Microsoft_Office-Logo.wine_-2048x1365.png" alt="Microsoft Office">
+                <span>Microsoft Office</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://noosstudio.com/wp-content/uploads/2017/08/SEM_Teaser.png" alt="SEM">
+                <span>SEM</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://freelogopng.com/images/all_img/1656733637logo-canva-png.png" alt="Canva">
+                <span>Canva</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://th.bing.com/th/id/R.f0802e9a19ac23fbc7692fd75d6804c5?rik=inXZw%2bBjGrQBzQ&riu=http%3a%2f%2fwww.millermedia.co%2fblog%2fwp-content%2fuploads%2f2015%2f07%2fEcommerce-Marketing.png&ehk=g2ZBIUDnpCGA6wQmqndDC5RI7HfvmJoAbpKJadynZdU%3d&risl=&pid=ImgRaw&r=0" alt="E-Commerce Strategies">
+                <span>E-Commerce Strategies</span>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="projects-section" id="projects">
+        <h2>Projects</h2>
+
+    </div>
+
+    <div class="experience-section" id="experience">
+        <h2>Experience</h2>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const textElement = document.getElementById('animatedText');
+        const texts = ['I am a digital marketer', 'I am a marketing head'];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let delay = 1500;  // Pause after typing each text
+
+        function type() {
+            const currentText = texts[textIndex];
+            if (isDeleting) {
+                textElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                if (charIndex === 6) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    setTimeout(type, 500);  // Pause before starting to type the next text
+                    return;
+                }
+            } else {
+                textElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+                if (charIndex === currentText.length) {
+                    setTimeout(() => isDeleting = true, delay);  // Pause before deleting
+                }
+            }
+            setTimeout(type, isDeleting ? 50 : 100);  // Speed of typing and deleting
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            type();
+        });
+    </script>
+</body>
+</html>
